@@ -1,0 +1,23 @@
+body.dark-mode {
+    background-color: #1e272e;
+    color: #ecf0f1;
+  }
+  
+  .dark-mode-toggle {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .dark-mode-toggle:hover {
+    background-color: #2980b9;
+  }
+  

@@ -1,0 +1,25 @@
+.auth-container {
+    padding: 60px 0;
+    background: #f8f9fa;
+  }
+   .auth-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+   .auth-card h3 {
+    font-weight: 600;
+    color: #333;
+  }
+   .auth-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+   .auth-link:hover {
+    text-decoration: underline;
+  }
+   button:focus {
+    outline: none;
+    box-shadow: none;
+  }
+ 

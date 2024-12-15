@@ -1,0 +1,114 @@
+/* Sidebar Styles */
+.sidebar {
+  width: 220px;
+  background-color: #343a40; /* Dark background */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: fixed;
+  height: 100vh;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Sidebar Header (optional title) */
+.sidebar h2 {
+  text-align: left;
+  margin-bottom: 40px;
+  font-size: 24px;
+  color: #f5f6fa;
+  
+}
+
+/* Sidebar Links (navigation) */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1; /* Allow scrolling if the list exceeds screen height */
+  overflow-y: auto;
+}
+
+.sidebar-link {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 12px 15px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover and active link states */
+.sidebar-link:hover,
+.sidebar-link.active {
+  background-color: #495057; /* Darker shade */
+  transform: translateX(10px); /* Smooth hover effect */
+  border-radius: 5px;
+}
+
+/* Add hover effect to icons or before pseudo element */
+.sidebar-link:hover::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 6px;
+  width: 6px;
+  background: #81ecec;
+  border-radius: 50%;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+/* Sidebar Logout Button */
+.logout-button {
+  background-color: #dc3545; /* Red for logout */
+  color: white;
+  margin-top: auto;
+  padding: 10px 15px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.logout-button:hover {
+  background-color: #e74c3c;
+  transform: scale(1.05); /* Slight scale on hover */
+}
+
+/* Scrollbar Styling for Sidebar */
+.sidebar ul::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar ul::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 10px;
+}
+
+.sidebar ul::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Responsive layout for the sidebar and content */
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f0f0f0; /* Matches main content background */
+}
+
+.content {
+  margin-left: 220px; /* Sidebar width */
+  padding: 20px;
+  flex-grow: 1;
+  background-color: #f8f9fa;
+}

@@ -1,0 +1,59 @@
+.settings-container {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0px auto;
+  font-family: "Arial", sans-serif;
+  position: absolute; /* Position it absolutely on the page */
+  left: 240px; /* Adjust the left value for exact placement */
+}
+
+.settings-container h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #343a40;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #007bff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.settings-container p {
+  font-size: 16px;
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+
+.settings-options {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.settings-options li {
+  margin-bottom: 15px;
+}
+
+.settings-options a {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  color: #007bff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.settings-options a:hover {
+  background-color: #e9f5ff;
+  color: #0056b3;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.settings-options a:active {
+  transform: scale(0.98);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
